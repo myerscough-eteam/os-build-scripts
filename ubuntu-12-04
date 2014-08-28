@@ -58,7 +58,26 @@ git config --global push.default current
 git config --global color.ui auto
 git config --global color.status always
 
+git clone https://github.com/igbinary/igbinary
+cd igbinary
+phpize
+./configure
+make
+sudo make install
+echo extension=igbinary.so | sudo tee /etc/php5/conf.d/igbinary.ini > /dev/null
+cd ~
+
+git clone https://github.com/nicolasff/phpredis
+cd phpredis
+phpize
+./configure --enable-redis-igbinary
+make
+sudo make install
+echo extension=redis.so | sudo tee /etc/php5/conf.d/redis.ini > /dev/null
+cd ~
+
 git clone https://github.com/myerscough-eteam/bloom
+cd bloom
 git checkout development
 make
 
