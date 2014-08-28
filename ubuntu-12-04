@@ -20,4 +20,7 @@ apt-get -y install munin munin-plugins-extra
 apt-get -y install mysql-server
 
 apt-get -y install nload
+apt-get -y install python-software-properties
+apt-add-repository ppa:chris-lea/node.js
+apt-get update
 apt-get -y install nodejs
