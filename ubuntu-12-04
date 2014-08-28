@@ -6,5 +6,11 @@
 # Run this script with SUDO
 # sudo ./ubuntu-12-04
 
-sudo apt-get update
-sudo apt-get upgrade
+apt-get update
+apt-get -y upgrade
+
+apt-get -y install apache2-mpm-worker
+apt-get -y install git
+apt-get -y install htop
+apt-get -y install imagemagick
+apt-get -y install memcached
