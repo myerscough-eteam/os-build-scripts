@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Before running this script, install Ubuntu 12.04 LTS with OpenSSH.
+# Manually setup the network interface(s) and SSH authorized_keys (disable password login).
+#
+# Run this script with SUDO
+# sudo ./ubuntu-12-04
+
+sudo apt-get update
+sudo apt-get upgrade
