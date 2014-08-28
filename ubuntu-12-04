@@ -10,6 +10,9 @@ sudo apt-get update
 sudo apt-get -y upgrade
 
 sudo apt-get -y install apache2-mpm-worker
+sudo a2enmod ssl
+sudo a2enmod rewrite
+
 sudo apt-get -y install git
 sudo apt-get -y install htop
 sudo apt-get -y install imagemagick
