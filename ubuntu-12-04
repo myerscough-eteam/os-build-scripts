@@ -12,6 +12,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y install apache2-mpm-worker
 sudo a2enmod ssl
 sudo a2enmod rewrite
+sudo service apache2 restart
 
 sudo apt-get -y install git
 sudo apt-get -y install htop
