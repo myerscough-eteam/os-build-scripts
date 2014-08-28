@@ -38,6 +38,10 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 sudo composer self-update
 
+git config --global core.editor nano
+git config --global url.https://.insteadOf git://
+git config --global push.default "current"
+
 git clone https://github.com/myerscough-eteam/bloom
 git checkout development
 make
