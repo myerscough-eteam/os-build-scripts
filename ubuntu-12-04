@@ -20,3 +20,4 @@ apt-get -y install munin munin-plugins-extra
 apt-get -y install mysql-server
 
 apt-get -y install nload
+apt-get -y install nodejs
