@@ -36,5 +36,8 @@ cd ~
 
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+sudo composer self-update
 
 git clone https://github.com/myerscough-eteam/bloom
+git checkout development
+make
