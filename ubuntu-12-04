@@ -34,7 +34,7 @@ sudo apt-add-repository ppa:chris-lea/node.js
 sudo apt-get update
 sudo apt-get -y install nodejs
 sudo apt-get -y install php5-cgi php5-cli
-sudo apt-get -y install php5-curl php5-dev php5-gd php5-gmp php5-json php5-ldap php5-mcrypt php5-memcache php5-mysql php5-xdebug
+sudo apt-get -y install php5-curl php5-dev php5-gd php5-gmp php5-json php5-ldap php5-mcrypt php5-memcache php5-memcached php-http php5-mysql php5-xdebug
 sudo apt-get -y install python3
 sudo apt-get -y install dkms
 sudo apt-get -y install zip
