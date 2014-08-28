@@ -15,4 +15,8 @@ apt-get -y install htop
 apt-get -y install imagemagick
 apt-get -y install memcached
 apt-get -y install munin munin-plugins-extra
+
+# Generate a new root user account and enter it when asked.
 apt-get -y install mysql-server
+
+apt-get -y install nload
