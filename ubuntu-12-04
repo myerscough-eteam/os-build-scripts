@@ -44,6 +44,9 @@ sudo apt-get -y install dkms
 sudo apt-get -y install zip
 sudo apt-get -y install redis-server
 
+sudo apt-get -y install python-pip
+sudo pip install slimit
+
 sudo npm -g install bower
 
 cd ~
