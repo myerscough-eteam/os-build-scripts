@@ -44,6 +44,12 @@ sudo apt-get -y install dkms
 sudo apt-get -y install zip
 sudo apt-get -y install redis-server
 
+sudo add-apt-repository ppa:mapnik/boost
+wget -O - http://dl.hhvm.com/conf/hhvm.gpg.key | sudo apt-key add -
+echo deb http://dl.hhvm.com/ubuntu precise main | sudo tee /etc/apt/sources.list.d/hhvm.list
+sudo apt-get update
+sudo apt-get install hhvm
+
 sudo apt-get -y install python-pip
 sudo pip install slimit
 
@@ -53,7 +59,7 @@ cd ~
 
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-sudo composer self-update
+sudo hhvm /usr/local/bin/composer self-update
 
 git config --global core.editor nano
 git config --global url.https://.insteadOf git://
