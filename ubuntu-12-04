@@ -88,6 +88,7 @@ cd ~
 git clone git@github.com:myerscough-eteam/bloom.git
 cd bloom
 git checkout master
+rm ~/.hhvm.hhbc
 make
 
 # From here, it's up to you to manually setup Apache, PHP and MySQL
