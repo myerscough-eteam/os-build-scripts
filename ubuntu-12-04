@@ -85,9 +85,9 @@ sudo make install
 echo extension=redis.so | sudo tee /etc/php5/conf.d/redis.ini > /dev/null
 cd ~
 
-git clone https://github.com/myerscough-eteam/bloom
+git clone git@github.com:myerscough-eteam/bloom.git
 cd bloom
-git checkout development
+git checkout master
 make
 
 # From here, it's up to you to manually setup Apache, PHP and MySQL
